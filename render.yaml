@@ -1,7 +1,11 @@
 services:
   - type: web
-    name: truyen-java-web
+    name: truyenmoi-app
     env: docker
     plan: free
+    repo: https://github.com/Tqisme/TruyeMoi  # <== sửa đúng repo của bạn nếu khác
+    region: singapore
+    branch: main
     dockerfilePath: ./Dockerfile
-    autoDeploy: false
+    autoDeploy: true
+    rootDir: ./
